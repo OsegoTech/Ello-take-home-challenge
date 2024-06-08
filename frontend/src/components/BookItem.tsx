@@ -35,7 +35,7 @@ const BookItem: React.FC<BookItemProps> = ({ book, action, actionLabel }) => {
             />
             <CardContent style={{ flex: 1, textAlign: 'left' }}>
                 <Typography variant={typographyVariant} style={{ marginBottom: 4 }}>{book.title}</Typography>
-                <Typography variant="subtitle2" style={{ color: '#335c6e', fontSize: isSmScreen ? '0.8rem' : '0.6rem' }}>by {book.author}</Typography>
+                <Typography variant="subtitle2" style={{ color: '#335c6e' }}>by {book.author}</Typography>
                 <Button variant="contained" color="primary" onClick={handleAction} style={{ backgroundColor: '#53c2c2', color: '#fff', marginTop: 8 }}>
                     {actionLabel}
                 </Button>
